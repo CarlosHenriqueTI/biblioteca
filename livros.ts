@@ -2,6 +2,7 @@ export class Livro {
     id: number;
     titulo: string;
     autor: string;
+    isbn: string;
     editora: string;
     ano: number;
     genero: string;
@@ -14,10 +15,11 @@ export class Livro {
     idBibliotecario: number;
     idEmprestimo: number;
 
-constructor (id: number, titulo: string, autor: string, editora: string, ano: number, genero: string, sinopse: string, imagem: string, disponivel: boolean, dataDevolucao: string, dataEmprestimo: string, idUsuario: number, idBibliotecario: number, idEmprestimo: number){
+constructor (id: number, titulo: string, autor: string, isbn: string, editora: string, ano: number, genero: string, sinopse: string, imagem: string, disponivel: boolean, dataDevolucao: string, dataEmprestimo: string, idUsuario: number, idBibliotecario: number, idEmprestimo: number){
     this.id = id;
     this.titulo = titulo;
     this.autor = autor;
+    this.isbn = isbn;
     this.editora = editora;
     this.ano = ano;
     this.genero = genero;
